@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/edit/{{ message._id }}" method="post">
+    nickname: <br>
+    <input type="text" name="sender"  value="{{ message.sender }}"/><br>
+    message: <br>
+    <textarea rows="5" cols="50" name="body">{{ message.body }}</textarea> <br>
+    <input type="submit" value="save" /><br>
+
+
+</form>
+
+
+{% endblock %}

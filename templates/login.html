@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if success %}
+        <div>
+            <p>Hoşgeldin. Admin girişi için <a href="/admin">buraya</a> tikla</p>
+        </div>
+    {% else %}
+        <div>
+            <form action="/login" method="post">
+                <br>
+                username: <input type="text" name="uname" /><br><br>
+                password: <input type="password" name="password" /><br><br>
+
+                <input type="submit" value="login" /><br><br>
+             </form>
+        </div>
+    {% endif %}
+
+
+
+
+{% endblock %}

@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 44px;
+}
+
+nav{
+    text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 12px;
+  overflow: hidden;
+  background-color: darkcyan;
+  vertical-align: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.baslik{
+  margin:0;
+  padding: 10px 10px;
+  overflow: hidden;
+  background-color:cadetblue;
+  vertical-align: center;
+  width: 100%;
+}
+
+div{
+  margin:0;
+  padding: 14px 16px;
+  overflow: hidden;
+  background-color:cadetblue;
+  width: 100%;
+}
+

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div>
+        <h3>Moderate Messages</h3>
+    </div>
+    </br>
+    {% for message in messages %}
+        <div>
+            <p>Sender : {{ message.sender }}</p>
+            <p>Message: {{ message.body }}</p>
+            <ul>
+              <li><a href="/edit/{{ message._id }}">Edit</a></li>
+              <li><a href="/remove/{{ message._id }}">Remove</a></li>
+              {% if not message.approved %}
+                <li><a href="/approve/{{ message._id }}">Approve</a></li>
+              {% else %}
+                <li><a href="/revoke/{{ message._id }}">Revoke</a></li>
+              {% endif %}
+            </ul>
+        </div>
+        </br>
+    {% endfor %}
+
+{% endblock %}
